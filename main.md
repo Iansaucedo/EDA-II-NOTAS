@@ -109,3 +109,67 @@ R: en la fase ida se exploran soluciones nuevas que van hacia una convergencia d
 ## Ordenacion estable vs inestable
 
 r: Un algoritmo de ordenación estable mantiene el orden relativo de los elementos con claves iguales después de ordenar, es decir, si dos elementos son iguales, aparecerán en el mismo orden que tenían originalmente. En cambio, un algoritmo de ordenación inestable puede cambiar el orden relativo de esos elementos, por lo que no garantiza que los elementos iguales conserven su posición original tras la ordenación.
+
+## diferencias entre eficiencia y complejidad temporal en algoritmos
+
+r:
+
+1. La complejidad temporal es una medida teórica del tiempo de ejecución dependiendo del tamaño de entrada.
+
+2. La eficiencia es la capacidad real del algoritmo de usar recursos de forma óptima, considerando factores prácticos como el hardware, la implementación y má
+
+## Clasificacion metodos de ordenamiento
+
+1. Según su método de funcionamiento
+
+   Intercambio (Swap o Exchange):
+   Ejemplos: Bubble Sort, Quick Sort
+   Funcionan intercambiando pares de elementos para ordenarlos.
+
+   Inserción:
+   Ejemplo: Insertion Sort
+   Construyen la lista ordenada insertando elementos uno a uno en su posición correcta.
+
+   Selección:
+   Ejemplo: Selection Sort
+   Repetidamente seleccionan el elemento mínimo (o máximo) y lo colocan en su posición final.
+
+   Fusión (Merge):
+   Ejemplo: Merge Sort
+   Dividen la lista en sublistas, las ordenan y las fusionan.
+
+   Distribución (Distribution o Radix):
+   Ejemplos: Counting Sort, Radix Sort, Bucket Sort
+   Distribuyen los elementos en “cubetas” o utilizan técnicas de conteo/clasificación por dígitos.
+
+2. Según su complejidad y rendimiento
+
+   Algoritmos simples (no eficientes para grandes volúmenes):
+   Bubble Sort, Selection Sort, Insertion Sort (O(n²))
+
+   Algoritmos eficientes (usados en la práctica):
+   Merge Sort, Quick Sort, Heap Sort (O(n log n))
+
+   Algoritmos lineales (bajo ciertas condiciones):
+   Counting Sort, Radix Sort, Bucket Sort (O(n))
+
+3. Según su naturaleza
+
+   Comparativos: Comparan elementos para ordenarlos.
+   Ejemplos: Bubble Sort, Merge Sort, Quick Sort, Heap Sort
+
+   No comparativos: No comparan elementos entre sí, sino que utilizan propiedades de los datos.
+   Ejemplos: Counting Sort, Radix Sort, Bucket Sort
+
+4. Según la estabilidad
+
+   Estables: Mantienen el orden relativo de elementos iguales.
+   Ejemplos: Bubble Sort, Merge Sort, Insertion Sort, Counting Sort
+
+   No estables: Pueden cambiar el orden relativo de elementos iguales.
+   Ejemplos: Quick Sort, Heap Sort, Selection Sort
+
+5. Según su implementación
+
+   Internos: Ordenan la estructura completa en memoria principal.
+   Externos: Ordenan datos almacenados en memoria secundaria (archivos grandes).
